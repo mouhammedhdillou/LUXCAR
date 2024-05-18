@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background-color: rgb(16, 5, 21);
+    height: 100vh;
+    width:100% ;
+    justify-content: center;
+    align-items: center;
+    margin: auto;    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px 20%;
+}
+.header ul li {
+    display: inline-block;
+    margin: 0 15px; 
+}
+.header ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+
+}
+.header ul li a:hover{
+    color: red;
+}
+#logo{
+    height: 100px;
+}
+.container{
+    background: rgba(255,255,255,0.1);
+    height: 80%;
+    width: 80%;
+    margin-left: 10% ;
+    border-radius: 20px;
+
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    height:80%;
+    width: 80%;
+    margin: auto;
+}
+.container .texte{
+    color: white;
+    width: 40%;
+}
+.container .texte h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    animation-name: TITLETRANMITION;
+    animation-duration: 2s;
+    animation-delay: 0S;
+}
+.container .texte .button {
+  margin-left: 20% ;
+  background: none;
+  display: flex;
+  margin: 0 140px; 
+  column-gap: 15px;
+  padding: 0% 0%;
+}  
+.container .texte .button button{
+    width: 120px;
+    height: 25px;
+    border-radius: 8px;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: none;
+    padding: 0%;
+ 
+    background: #ff0000;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    color:  rgb(16, 5, 21);
+}
+.container .texte .button .log{
+    background-color: aliceblue;
+    color:  rgb(16, 5, 21);
+}
+.container .texte .button  :hover{
+    height: 30px;
+    width: 130px;
+    filter: drop-shadow(0 0 5px #5a2222);
+}
+
+@keyframes TITLETRANMITION{
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+        color: rgb(255, 14, 14);
+
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+        color: aliceblue;
+    }
+
+
+}
+.container .texte p{
+    font-size: 25px ;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-family: initial;
+   padding: 60px 30px;
+}
+.container .image{
+margin-top: 10%;
+margin-right: 2%;
+}
+.container .image :hover{
+    filter: drop-shadow(0 0 30px #ff0000);
+}
+.container .image img{
+    width: 600px;
+}
+@media (max-width:950px){
+    .header ul li {
+        margin: 0 15px; 
+    }
+    .container .texte .button {
+        margin-left: 10% ;
+        background: none;
+        display: flex;
+        margin: 0 80px; 
+        column-gap: 15px;
+        padding: 0% 0%;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .texte{
+        width: 100%;
+    }
+    .container .texte p{
+    font-size: 10px ;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    padding: 0% 10px;
+}
+.container .image img{
+    width: 350px;
+    height: 200px;
+    margin-left: 25px;
+     }
+}
+::-webkit-scrollbar{
+    width: 8px;
+   
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(255, 0, 0),rgb(255, 255, 255));
+    background-color:black;
+ border-radius: 5px;
+}
+.container2 .texte2{
+    background-color: rgba(190, 147, 147, 0.1);
+    width: 40%;
+    height: 100%;
+    margin-left: 10% ;
+    border-radius: 20px;
+
+
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+    height:80%;
+    width: 80%;
+    margin: auto;
+    background:rgba(226, 99, 99, 0.063);
+    height: 80%;
+    width: 80%;
+    margin-left: 10% ;
+    border-radius: 20px;
+}
+
+.container2 .texte2 h1{
+    width: 20px;
+    height: 20px;
+    margin: 20px 160px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+.container2 .texte2 p{
+    font-size: 25px ;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-family: initial;
+   padding: 10px 10px;
+   color: rgb(189, 195, 200);
+}
+@media (max-width:950px){
+    .container2 .texte2{
+        background-color: rgba(190, 147, 147, 0.1);
+        width: 80%;
+        height: 100%;
+        margin-left: 10% ;
+        border-radius: 20px;
+    }
+    .container2 .texte2 p{
+        font-size: 15px ;
+       color:  rgb(189, 195, 200);}
+       .container2 .texte2 h1{
+        width: 20px;
+        height: 20px;
+        margin: 20px 80px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 35px;
+    }
+    .header ul li {
+        display: inline-block;
+        margin: 0 3px; 
+        
+    }
+    .container2{
+        display: block;
+        background: rgba(156, 17, 17, 0.1);
+        height: 80%;
+        width: 80%;
+        margin-left: 10% ;
+        border-radius: 20px;
+    }
+    .container2 .texte3 h1{
+        width: 20px;
+        height: 20px;
+        margin: 20px 80px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 35px;
+    }
+}
+.container2 .texte3{
+    background-color: rgba(190, 147, 147, 0.1);
+    width: 40%;
+    height: 100%;
+    margin-left: 10% ;
+    border-radius: 20px;
+
+}
+.container2 .texte3 h1{
+    color: #ff0000;
+    width: 20px;
+    height: 20px;
+    margin: 20px 160px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    
+}
+@media (max-width:950px){
+    .container2 .texte3{
+        background-color: rgba(190, 147, 147, 0.1);
+        width: 98%;
+        height: 100%;
+        margin-left: 2% ;
+        border-radius: 20px;
+       
+    
+    }
+    .container2 .texte3 h1{
+        color: #ff0000;
+        width: 30px;
+        height: 20px;
+        margin: 15px 100px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 35px;
+        
+    }
+    .container2 .texte3 img{
+        width: 350px;
+        margin: 20px;
+       
+    
+    }
+
+}
+    
